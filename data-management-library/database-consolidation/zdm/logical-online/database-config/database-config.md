@@ -138,7 +138,6 @@ In this lab, you will:
     grant create view to c##ggadmin container=all;
     grant set container to c##ggadmin container=all;
     grant execute on dbms_lock to c##ggadmin container=all;
-
     exec dbms_goldengate_auth.GRANT_ADMIN_PRIVILEGE('c##ggadmin',container=>'all');
     </copy>
     ```
