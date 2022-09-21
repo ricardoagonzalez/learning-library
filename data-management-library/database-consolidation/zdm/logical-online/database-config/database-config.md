@@ -136,7 +136,9 @@ In this lab, you will:
     alter user c##ggadmin quota 100M ON USERS;
     grant select any dictionary to c##ggadmin;
     grant create view to c##ggadmin container=all;
+    grant set container to c##ggadmin container=all;
     grant execute on dbms_lock to c##ggadmin container=all;
+
     exec dbms_goldengate_auth.GRANT_ADMIN_PRIVILEGE('c##ggadmin',container=>'all');
     </copy>
     ```
